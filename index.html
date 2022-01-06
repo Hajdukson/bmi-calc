@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <script
+      type="module"
+      src="./node_modules/jquery-validation/dist/jquery.validate.min.js"
+    ></script>
+    <script
+      type="module"
+      src="./node_modules/jquery-validation/dist/additional-methods.min.js"
+    ></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="./resources/js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <form id="form" class="form" action="javascript:void(0);">
+        <h1 class="form__header">BMI Calculator</h1>
+        <div>
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            placeholder="Name"
+          />
+        </div>
+        <div>
+          <input
+            class="form__input"
+            type="number"
+            name="height"
+            placeholder="Height (meters)"
+          />
+        </div>
+        <div>
+          <input
+            class="form__input"
+            type="number"
+            name="weight"
+            placeholder="Weight (kilograms)"
+          />
+        </div>
+        <input type="submit" class="btn" value="Calculate" />
+        <div class="form__result">
+          <p id="result"></p>
+        </div>
+      </form>
+
+      <div class="instructions">
+        <h2 class="instructions__header">BMI, basic categories</h2>
+        <table class="table">
+          <tr>
+            <th>Category</th>
+            <th>BMI (kg/m^2)</th>
+          </tr>
+          <tr>
+            <td>Underweight (Severe thinness)</td>
+            <td>< 16.0</td>
+          </tr>
+          <tr>
+            <td>Underweight (Moderate thinness)</td>
+            <td>16.0 – 16.9</td>
+          </tr>
+          <tr>
+            <td>Underweight (Mild thinness)</td>
+            <td>17.0 – 18.4</td>
+          </tr>
+          <tr>
+            <td>Normal range</td>
+            <td>18.5 – 24.9</td>
+          </tr>
+          <tr>
+            <td>Overweight (Pre-obese)</td>
+            <td>25.0 – 29.9</td>
+          </tr>
+          <tr>
+            <td>Obese (Class I)</td>
+            <td>30.0 – 34.9</td>
+          </tr>
+          <tr>
+            <td>Obese (Class II)</td>
+            <td>35.0 – 39.9</td>
+          </tr>
+          <tr>
+            <td>Obese (Class III)</td>
+            <td>≥ 40.0</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
