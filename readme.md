@@ -83,4 +83,4 @@ function writeMessageBaseOnBMI(name, bmi) {
 - On the Internet Explorer jQuery Plugin does not work properly.
 - Recomended browser to run the website is Firefox.
 
-### You can check a demo [here](https://michal-hajduk-bmi-calculator.netlify.app/)
+### You can check out a demo [here](https://michal-hajduk-bmi-calculator.netlify.app/)
